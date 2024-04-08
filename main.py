@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(v1, prefix="/v1")
+app.include_router(v1, prefix="/api/v1")
 
 if __name__ == "__main__":
     uvicorn.run("main:app", reload=True)
