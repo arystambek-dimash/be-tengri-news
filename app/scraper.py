@@ -1,7 +1,6 @@
 import asyncio
 
 import aiohttp
-import requests
 from bs4 import BeautifulSoup
 
 from .utils import write_to_json
