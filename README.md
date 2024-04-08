@@ -17,8 +17,9 @@ These instructions will help you get the project up and running on your local ma
 
 1. Clone the repository:
 
-   ```sh
+```sh
    git clone https://github.com/your-username/tengri_news.git
+```
 
 ## 1.Navigate to the project directory:
 
