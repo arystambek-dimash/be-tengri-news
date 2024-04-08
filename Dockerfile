@@ -1,4 +1,4 @@
-FROM python:3.10 as requimeints-stage
+FROM python:3.10 as requirements-stage
 
 WORKDIR /tmp
 
@@ -14,5 +14,3 @@ RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
 COPY . .
 
 CMD [ "python", "./main.py"]
-
-
