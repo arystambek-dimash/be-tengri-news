@@ -22,8 +22,9 @@ These instructions will help you get the project up and running on your local ma
 
 ## 1.Navigate to the project directory:
 
-
-cd tengri_news
+```
+   cd tengri_news
+```
 
 ## 2.Install project dependencies using Poetry:
 
