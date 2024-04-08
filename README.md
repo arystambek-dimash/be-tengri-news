@@ -28,15 +28,16 @@ These instructions will help you get the project up and running on your local ma
 
 ## 2.Install project dependencies using Poetry:
 
-
-poetry install
+```
+   poetry install
+```
 
 # Running the Application
 ## 1.Activate the virtual environment:
 
-
-poetry shell
-
+```
+   poetry shell
+```
 
 ## 2.Start the FastAPI application:
 
