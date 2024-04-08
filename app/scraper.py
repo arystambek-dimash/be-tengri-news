@@ -36,7 +36,6 @@ async def scrape_page(session, index):
                 'img': 'https://tengrinews.kz/' + img,
                 'publish_date': publish_date
             }
-            print(publish_date)
             scraped_data.append(article_dict)
 
         return scraped_data
@@ -47,6 +46,12 @@ async def scrape():
         tasks = [scrape_page(session, index) for index in range(100)]
         results = await asyncio.gather(*tasks)
         scraped_data = [article for result in results for article in result]
+    unique_urls = set()
+    unique_data = []
 
-    await write_to_json(scraped_data)
-    return scraped_data
+    for data in scraped_data:
+        url = data['details_url']
+        if url not in unique_urls:
+            unique_data.append(data)
+            unique_urls.add(url)
+    await write_to_json(unique_data)
