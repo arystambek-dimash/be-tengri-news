@@ -3,6 +3,9 @@
 
 Welcome to TengriNews - Your ultimate destination for breaking news, insightful analysis, and comprehensive coverage of global events!
 
+## Ссылка на проект
+
+https://tengri-news.onrender.com/docs
 
 ## Getting Started
 
